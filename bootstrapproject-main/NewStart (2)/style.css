@@ -88,7 +88,7 @@ header .menu nav a {
   font-size: 18px;
   cursor: pointer;
 }
-header .menu nav a:hover a {
+header .menu nav a:hover {
   color: #e4b703;
 }
 @media (max-width: 992px) {
@@ -214,12 +214,12 @@ header .menu nav a:hover a {
 #about h1, #about h2, #about h3, #about h4, #about h5 {
   cursor: text;
 }
-#about .textbox h1 {
+#about .text-center h1 {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-#about .textbox h4 {
+#about .text-center h4 {
   font-size: 18px;
   color: #5f6c78;
   margin-bottom: 75px;
@@ -228,12 +228,9 @@ header .menu nav a:hover a {
   margin-bottom: 85px;
 }
 #about .box .textbox {
-  margin-left: 35px;
-  width: 340px;
-}
-#about .box .right {
-  text-align: right;
   margin-right: 35px;
+  width: 340px;
+  text-align: end;
 }
 #about .box h2, #about .box h3 {
   margin-bottom: 10px;
@@ -254,21 +251,27 @@ header .menu nav a:hover a {
 #about .box .imgbox {
   overflow: hidden;
 }
-#about .button {
+#about .right {
+  display: flex;
+  justify-content: flex-end;
+}
+#about .right .textbox {
+  margin-left: 35px;
+}
+#about .yellow {
   display: flex;
   justify-content: center;
 }
-#about .button .btn {
+#about .yellow .btn {
   line-height: 1.2;
-  padding: 0 20px;
   color: white;
   background-color: #ffc800;
 }
-#about .button h2 {
+#about .yellow h2 {
   font-size: 20px;
   font-weight: 700;
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   #about .box .textbox {
     width: 252px;
   }
@@ -276,27 +279,38 @@ header .menu nav a:hover a {
     width: 100px;
     height: 100px;
   }
-  #about .box .btn {
-    padding: 15px;
-  }
   #about .box .btn h2 {
     margin: 0;
     font-size: 15px;
   }
 }
-@media (max-width: 768px) {
-  #about .box .textbox {
-    width: 550px;
-  }
-  #about .box .right {
-    text-align: left;
-  }
-  #about .reverse {
+@media screen and (max-width: 768px) {
+  #about .box {
+    justify-content: start;
     flex-direction: row-reverse;
   }
-  #about .button {
+  #about .box .textbox {
+    width: 550px;
+    text-align: start;
+    margin-left: 20px;
+  }
+  #about .box .imgbox {
+    width: 105px;
+    height: 80px;
+  }
+  #about .right {
+    flex-direction: row;
+  }
+  #about .yellow {
     display: flex;
     justify-content: left;
+  }
+  #about .yellow .btn {
+    width: 80px;
+    height: 80px;
+  }
+  #about .yellow .btn h2 {
+    font-size: 11px;
   }
 }
 

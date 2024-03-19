@@ -1,7 +1,7 @@
 #about
     h1,h2,h3,h4,h5
         cursor: text
-    .textbox
+    .text-center
         h1
             font-size: 40px
             font-weight: 700
@@ -13,11 +13,9 @@
     .box
         margin-bottom: 85px
         .textbox
-            margin-left: 35px
-            width: 340px
-        .right
-            text-align: right
             margin-right: 35px
+            width: 340px
+            text-align: end
         h2,h3
             margin-bottom: 10px
             font-weight: 700
@@ -33,18 +31,22 @@
             border-radius: 100%
         .imgbox
             overflow: hidden
-    .button
+    .right
+        display: flex
+        justify-content: flex-end
+        .textbox
+            margin-left: 35px
+    .yellow
         display: flex
         justify-content: center
         .btn
             line-height: 1.2
-            padding: 0 20px
             color: #ffff
             background-color: #ffc800
         h2
             font-size: 20px
             font-weight: 700
-    @media (max-width: 992px)
+    @media screen and ( max-width: 992px )
         .box
             .textbox
                 width: 252px
@@ -52,18 +54,27 @@
                 width: 100px
                 height: 100px
             .btn
-                padding: 15px
                 h2
                     margin: 0
                     font-size: 15px
-    @media (max-width: 768px)
+    @media screen and (max-width: 768px)
         .box
+            justify-content: start
+            flex-direction: row-reverse
             .textbox
                 width: 550px
-            .right
-                text-align: left
-        .reverse
-            flex-direction: row-reverse
-        .button
+                text-align: start
+                margin-left: 20px
+            .imgbox
+                width: 105px
+                height: 80px
+        .right
+            flex-direction: row
+        .yellow
             display: flex
             justify-content: left
+            .btn
+                width: 80px
+                height: 80px
+                h2
+                    font-size: 11px
