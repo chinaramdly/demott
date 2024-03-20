@@ -58,28 +58,36 @@ body section .imgbox img {
   }
 }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+header .menu {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  height: 70px;
   background-color: #212529;
-  padding: 18px 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 header .menu .imgbox {
+  margin-left: 50px;
   width: 140px;
 }
 header .menu .btn {
-  color: white;
+  color: #ffffff;
   display: flex;
   align-items: center;
   display: none;
-  border: 1px solid rgba(255, 255, 255, 0.6470588235);
+  border: 1px solid rgba(98, 96, 96, 0.6470588235);
   opacity: 0.5;
 }
 header .menu .btn h2 {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 12px;
   margin-right: 7px;
+}
+header .menu nav {
+  margin-right: 50px;
 }
 header .menu nav a {
   line-height: 1.5;
@@ -96,13 +104,19 @@ header .menu nav a:hover {
     display: none;
   }
   header .menu .btn {
+    margin-right: 20px;
     display: flex;
   }
 }
 @media screen and (max-width: 279px) {
   header .menu {
-    display: flex;
+    padding: 25px 10px 15px;
+    height: 107px;
+    align-items: flex-start;
     flex-direction: column;
+  }
+  header .menu .imgbox {
+    margin-left: 0;
   }
 }
 
@@ -185,7 +199,11 @@ header .menu nav a:hover {
 }
 #portfolio .box .imgbox .icon {
   position: absolute;
-  top: 80px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   color: white;
   font-size: 60px;
@@ -394,67 +412,6 @@ header .menu nav a:hover {
 }
 #image .ibm {
   width: 110px;
-}
-
-#contact {
-  background-color: #212529;
-  background-image: url(assets/map-image.png);
-  background-position: center;
-  width: 100%;
-  height: auto;
-}
-#contact .textbox h1 {
-  color: white;
-  font-weight: 700;
-  font-size: 40px;
-}
-#contact .textbox h4 {
-  font-size: 19px;
-  color: #6b7075;
-  margin: 20px 0 70px;
-}
-#contact input, #contact textarea {
-  font-weight: 700;
-  padding: 20px;
-  font-size: 16px;
-}
-#contact input {
-  width: 460px;
-  height: 68px;
-  margin-bottom: 25px;
-}
-#contact textarea {
-  width: 456px;
-  height: 257px;
-  border-radius: 5px;
-  padding: 20px;
-}
-#contact .btn {
-  border-radius: 5px;
-  padding: 18px 45px;
-  font-weight: 700;
-  font-size: 20px;
-  color: white;
-  background-color: #cb9f00;
-  opacity: 0.8;
-}
-@media screen and (max-width: 992px) {
-  #contact input {
-    width: 330px;
-    height: 68px;
-  }
-  #contact textarea {
-    width: 336px;
-  }
-}
-@media screen and (max-width: 768px) {
-  #contact input {
-    width: 500px;
-  }
-  #contact textarea {
-    width: 500px;
-    height: 200px;
-  }
 }
 
 footer {
