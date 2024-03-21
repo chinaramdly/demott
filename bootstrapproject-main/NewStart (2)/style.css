@@ -71,7 +71,7 @@ header .menu {
 }
 header .menu .imgbox {
   margin-left: 50px;
-  width: 150px;
+  width: 145px;
 }
 header .menu .btn {
   color: #ffffff;
@@ -80,7 +80,6 @@ header .menu .btn {
   display: none;
   border: 1px solid rgba(98, 96, 96, 0.6470588235);
   opacity: 0.5;
-  margin-left: 20px;
 }
 header .menu .btn h2 {
   font-weight: 700;
@@ -117,7 +116,7 @@ header .menu nav a:hover {
     margin-left: 10px;
   }
   header .menu .btn {
-    margin-right: 10px;
+    margin: 0 10px;
   }
 }
 @media screen and (max-width: 279px) {
@@ -126,12 +125,6 @@ header .menu nav a:hover {
     height: 107px;
     align-items: flex-start;
     flex-direction: column;
-  }
-  header .menu .imgbox {
-    margin-left: 0;
-  }
-  header .menu .btn {
-    margin-right: 3px;
   }
 }
 
@@ -340,12 +333,12 @@ header .menu nav a:hover {
     flex-direction: row-reverse;
   }
   #about .box .textbox {
-    width: 550px;
+    width: 340px;
     text-align: start;
     margin-left: 20px;
   }
   #about .box .imgbox {
-    width: 105px;
+    width: 80px;
     height: 80px;
   }
   #about .right {
@@ -435,18 +428,18 @@ header .menu nav a:hover {
 #image {
   padding: 30px 0;
 }
-#image .image {
+#image .imgbox {
   margin: 15px 0;
-  width: 250px;
-}
-#image .google {
-  width: 120px;
+  width: 200px;
 }
 #image .facebook {
   width: 170px;
 }
+#image .google {
+  width: 120px;
+}
 #image .ibm {
-  width: 110px;
+  width: 100px;
 }
 
 #contact {
@@ -471,17 +464,18 @@ header .menu nav a:hover {
 #contact .place input {
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   padding: 22px 20px;
 }
 #contact .box {
   display: flex;
   font-size: 20px;
 }
-#contact .box .textarea {
-  color: #a1a1a1;
+#contact .box textarea {
+  color: #cccbcb;
   font-weight: 700;
   padding: 18px;
+  border-radius: 5px;
 }
 #contact .btn {
   border-radius: 5px;
