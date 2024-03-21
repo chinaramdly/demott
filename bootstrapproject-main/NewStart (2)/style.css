@@ -437,9 +437,7 @@ header .menu nav a:hover {
 #contact {
   background-color: #212529;
   background-image: url(assets/map-image.png);
-  background-position: center;
-  width: 100%;
-  height: auto;
+  background-position: center center;
 }
 #contact .textbox h1 {
   color: white;
@@ -451,21 +449,24 @@ header .menu nav a:hover {
   color: #6b7075;
   margin: 20px 0 70px;
 }
-#contact input, #contact textarea {
+#contact .place {
+  display: flex;
+  flex-direction: column;
+}
+#contact .place input {
   font-weight: 700;
-  padding: 20px;
-  font-size: 16px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 22px 20px;
 }
-#contact input {
-  width: 460px;
-  height: 68px;
-  margin-bottom: 25px;
+#contact .box {
+  display: flex;
+  font-size: 20px;
 }
-#contact textarea {
-  width: 456px;
-  height: 257px;
-  border-radius: 5px;
-  padding: 20px;
+#contact .box .textarea {
+  color: #a1a1a1;
+  font-weight: 700;
+  padding: 18px;
 }
 #contact .btn {
   border-radius: 5px;
@@ -475,23 +476,19 @@ header .menu nav a:hover {
   color: white;
   background-color: #cb9f00;
   opacity: 0.8;
-}
-@media screen and (max-width: 992px) {
-  #contact input {
-    width: 330px;
-    height: 68px;
-  }
-  #contact textarea {
-    width: 336px;
-  }
+  margin-top: 50px;
 }
 @media screen and (max-width: 768px) {
-  #contact input {
-    width: 500px;
+  #contact .box {
+    margin-top: 15px;
   }
-  #contact textarea {
-    width: 500px;
-    height: 200px;
+}
+@media screen and (max-width: 576px) {
+  #contact .textbox h1 {
+    font-size: 45px;
+  }
+  #contact .textbox h3 {
+    font-size: 18px;
   }
 }
 
