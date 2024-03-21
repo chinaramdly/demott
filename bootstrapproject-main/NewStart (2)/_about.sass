@@ -12,7 +12,7 @@
             color: #5f6c78
     .box
         display: flex
-        margin: 0 0 100px 8px
+        margin: 0 0 100px 0
         .textbox
             margin: 0 30px
             width: 330px
@@ -29,12 +29,12 @@
             border: 7px solid #e9ecef
             width: 150px
             height: 150px
-            border-radius: 100%
+            border-radius: 100px
             overflow: hidden
     .right
         display: flex
         justify-content: flex-end
-        margin: 0 8px 100px 0
+        margin: 0 0 100px 0
         .textbox
             text-align: start
     .yellow
@@ -46,24 +46,36 @@
             color: #ffff
             background-color: #ffc800
             border-radius: 50%
+            border: 7px solid #e9ecef
             .minibox
-                line-height: 1.2
+                padding: 0 30px
+                text-align: center
                 h2
                     font-size: 20px
                     font-weight: 700
+                    line-height: 1.2
     @media screen and ( max-width: 992px )
         .box
+            margin: 0 0px 100px 50px
             .textbox
-                width: 252px
-            .imgbox,.btn
+                width: 190px
+            .imgbox
                 width: 100px
                 height: 100px
-            .btn
-                h2
-                    margin: 0
-                    font-size: 15px
+        .yellow
+            .story
+                width: 100px
+                height: 100px
+                .minibox
+                    padding: 0 20px
+                    h2
+                        margin: 0
+                        font-size: 15px
+        .right
+            margin: 0 50px 100px 0
     @media screen and (max-width: 768px)
         .box
+            margin: 0 0 100px 0
             justify-content: start
             flex-direction: row-reverse
             .textbox
@@ -78,8 +90,10 @@
         .yellow
             display: flex
             justify-content: left
-            .btn
+            .story
                 width: 80px
                 height: 80px
-                h2
-                    font-size: 11px
+                .minibox
+                    padding: 0 16px
+                    h2
+                        font-size: 11px
