@@ -16,14 +16,6 @@
         background-color: #ffff
         .imgbox
             position: relative
-            background: #ffc60a
-            img
-                cursor: pointer
-                opacity: 1
-                transition: 0.5s
-            &:hover
-                img
-                    opacity: 0.1
             .icon
                 position: absolute
                 top: 0
@@ -35,11 +27,12 @@
                 color: #ffff
                 font-size: 60px
                 opacity: 0
-                text-align: center
                 transition: 0.5s
-            &:hover
-                .icon
-                    opacity: 1
+                &:hover
+                    background-color: #ffbb00
+                    opacity: 0.9
+                    transition: 0.5s
+                    cursor: pointer
         .textbox
             margin: 32px
             h2
