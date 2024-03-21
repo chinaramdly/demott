@@ -11,7 +11,7 @@ header
         z-index: 1
         .imgbox
             margin-left: 50px
-            width: 140px
+            width: 150px
         .btn
             color: #ffffff
             display: flex
@@ -19,6 +19,7 @@ header
             display: none
             border: 1px solid #626060a5
             opacity: 0.5
+            margin-left: 20px
             h2
                 font-weight: 700
                 font-size: 12px
@@ -37,9 +38,17 @@ header
         .menu
             nav
                 display: none
+            .imgbox
+                margin-left: 100px
             .btn
-                margin-right: 20px
+                margin-right: 100px
                 display: flex
+    @media screen and ( max-width: 576px)
+        .menu
+            .imgbox
+                margin-left: 10px
+            .btn
+                margin-right: 10px
     @media screen and ( max-width: 279px)
         .menu
             padding: 25px 10px 15px
@@ -48,3 +57,5 @@ header
             flex-direction: column
             .imgbox
                 margin-left: 0
+            .btn
+                margin-right: 3px

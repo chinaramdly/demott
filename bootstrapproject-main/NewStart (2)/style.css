@@ -71,7 +71,7 @@ header .menu {
 }
 header .menu .imgbox {
   margin-left: 50px;
-  width: 140px;
+  width: 150px;
 }
 header .menu .btn {
   color: #ffffff;
@@ -80,6 +80,7 @@ header .menu .btn {
   display: none;
   border: 1px solid rgba(98, 96, 96, 0.6470588235);
   opacity: 0.5;
+  margin-left: 20px;
 }
 header .menu .btn h2 {
   font-weight: 700;
@@ -103,9 +104,20 @@ header .menu nav a:hover {
   header .menu nav {
     display: none;
   }
+  header .menu .imgbox {
+    margin-left: 100px;
+  }
   header .menu .btn {
-    margin-right: 20px;
+    margin-right: 100px;
     display: flex;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .menu .imgbox {
+    margin-left: 10px;
+  }
+  header .menu .btn {
+    margin-right: 10px;
   }
 }
 @media screen and (max-width: 279px) {
@@ -117,6 +129,9 @@ header .menu nav a:hover {
   }
   header .menu .imgbox {
     margin-left: 0;
+  }
+  header .menu .btn {
+    margin-right: 3px;
   }
 }
 
