@@ -12,9 +12,7 @@ body section .imgbox img {
 #welcome {
   background-image: url(assets/header-bg.jpg);
   background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: auto;
+  background-position: center center;
 }
 #welcome .box {
   height: 480px;
@@ -34,17 +32,17 @@ body section .imgbox img {
   font-size: 40px;
   color: white;
 }
-#welcome .textbox .button .btn {
+#welcome .textbox .btn {
   font-size: 17px;
   background-color: #ffc800;
   padding: 20px 40px;
   border-radius: 6px;
 }
-#welcome .textbox .button h2 {
-  cursor: pointer;
-}
-#welcome .textbox .button:hover .btn {
+#welcome .textbox .btn:hover {
   background-color: #dbaf11;
+}
+#welcome .textbox .btn h2 {
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   #welcome .box {
@@ -130,11 +128,11 @@ header .menu nav a:hover {
 #services h1, #services h2, #services h3, #services h4 {
   cursor: text;
 }
-#services .textbox h1 {
+#services .text-center h1 {
   font-weight: 700;
   font-size: 40px;
 }
-#services .textbox h3 {
+#services .text-center h3 {
   font-size: 19px;
   color: #6e7a86;
   margin-top: 20px;
@@ -173,11 +171,11 @@ header .menu nav a:hover {
 #portfolio {
   background-color: #f8f9fa;
 }
-#portfolio .textbox {
-  text-align: center;
-}
 #portfolio h1, #portfolio h2, #portfolio h3, #portfolio h4 {
-  cursor: text;
+  cursor: tex;
+}
+#portfolio .text-center {
+  text-align: centert;
 }
 #portfolio h1 {
   font-size: 43px;
@@ -215,6 +213,7 @@ header .menu nav a:hover {
   cursor: pointer;
 }
 #portfolio .box .textbox {
+  text-align: center;
   margin: 32px;
 }
 #portfolio .box .textbox h2 {
@@ -391,12 +390,12 @@ header .menu nav a:hover {
 #team h1, #team h2, #team h3, #team h4 {
   cursor: text;
 }
-#team .textbox h1 {
+#team .text-center h1 {
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 20px;
 }
-#team .textbox h4 {
+#team .text-center h4 {
   color: #5f6c78;
   font-size: 22px;
 }
@@ -434,12 +433,12 @@ header .menu nav a:hover {
   width: 10px;
   height: 10px;
 }
+#team .box .textbox ul li:hover {
+  opacity: 0.8;
+}
 #team .box .textbox ul li .icon {
   font-size: 14px;
   margin: -7px;
-}
-#team .box .textbox ul:hover li {
-  opacity: 0.8;
 }
 #team .minibox {
   width: 650px;

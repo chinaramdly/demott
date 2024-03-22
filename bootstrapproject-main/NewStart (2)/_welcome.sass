@@ -1,9 +1,7 @@
 #welcome
     background-image: url(assets/header-bg.jpg)
     background-size: cover
-    background-position: center
-    width: 100%
-    height: auto
+    background-position: center center
     .box
         height: 480px
     .textbox
@@ -18,17 +16,15 @@
         h3
             font-size: 40px
             color: #ffff
-        .button
-            .btn
-                font-size: 17px
-                background-color: #ffc800
-                padding: 20px 40px
-                border-radius: 6px
+        .btn
+            font-size: 17px
+            background-color: #ffc800
+            padding: 20px 40px
+            border-radius: 6px
+            &:hover
+                background-color: #dbaf11
             h2
                 cursor: pointer
-            &:hover
-                .btn
-                    background-color: #dbaf11
     @media screen and ( max-width: 768px )
         .box
             height: 450px
