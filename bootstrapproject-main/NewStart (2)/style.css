@@ -471,12 +471,12 @@ header .menu nav a:hover {
   background-image: url(assets/map-image.png);
   background-position: center center;
 }
-#contact .textbox h1 {
+#contact .text-center h1 {
   color: white;
   font-weight: 700;
   font-size: 40px;
 }
-#contact .textbox h4 {
+#contact .text-center h4 {
   font-size: 19px;
   color: #6b7075;
   margin: 20px 0 70px;
@@ -493,11 +493,11 @@ header .menu nav a:hover {
 }
 #contact .box {
   display: flex;
-  font-size: 20px;
 }
 #contact .box textarea {
   color: #cccbcb;
   font-weight: 700;
+  font-size: 20px;
   padding: 18px;
   border-radius: 5px;
 }
@@ -517,10 +517,10 @@ header .menu nav a:hover {
   }
 }
 @media screen and (max-width: 576px) {
-  #contact .textbox h1 {
+  #contact .text-center h1 {
     font-size: 45px;
   }
-  #contact .textbox h3 {
+  #contact .text-center h3 {
     font-size: 18px;
   }
 }
@@ -529,34 +529,35 @@ footer {
   padding: 22px 0;
 }
 footer .menu a {
-  color: #535151;
   font-size: 18px;
+  color: #535151;
 }
 footer .menu span {
-  margin: 0 20px;
+  margin-left: 10px;
 }
 footer .menu ul {
   display: flex;
   justify-content: center;
 }
 footer .menu ul li .icon {
-  font-size: 17px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
-  background-color: #1a1919;
   color: white;
-  margin: 0 12px;
-  border-radius: 30px;
+  background-color: #1a1919;
+  border-radius: 50px;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  font-size: 17px;
 }
 footer .menu ul li .icon:hover {
   background-color: #424649;
   transition: 0.5s;
 }
-@media screen and (max-width: 768px) {
+footer .menu ul li .icon i {
+  margin: 3px 0 0 4px;
+}
+@media screen and (max-width: 992px) {
   footer .menu {
     display: flex;
     flex-direction: column;
